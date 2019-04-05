@@ -1,3 +1,6 @@
+## Code updated by Einar Horn
+# Now displays a comparison of TF-IDF and Count Vector results for various classifiers.
+
 # Author: Peter Prettenhofer <peter.prettenhofer@gmail.com>
 #         Olivier Grisel <olivier.grisel@ensta.org>
 #         Mathieu Blondel <mathieu@mblondel.org>
