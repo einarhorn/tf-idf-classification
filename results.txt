@@ -1,0 +1,90 @@
+Loading 20 Newsgroup data
+Number of samples for train : 11314
+Number of samples for test : 7532
+
+BoW Models
+---------------
+
+-----
+Tuning BoW TF-IDF Vectors Pipeline
+Fitting 3 folds for each of 5 candidates, totalling 15 fits
+Best score: 0.745
+Best parameters set:
+	svc__C: 1
+	vect__max_features: None
+Total time to refit: 9.571
+Test Accuracy : 0.688
+-----
+
+-----
+Tuning BoW Count Vectors Pipeline
+Fitting 3 folds for each of 5 candidates, totalling 15 fits
+Best score: 0.711
+Best parameters set:
+	svc__C: 0.01
+	vect__max_features: None
+Total time to refit: 10.770
+Test Accuracy : 0.657
+-----
+
+---------------
+
+
+BoW +  Chi-Square Feature Selection Models
+---------------
+
+-----
+Tuning BoW TF-IDF Vectors with Chi-Square feature selection Pipeline
+Fitting 3 folds for each of 18 candidates, totalling 54 fits
+Best score: 0.697
+Best parameters set:
+	feature_selection__k: 2000
+	svc__C: 1
+	vect__max_features: None
+Total time to refit: 8.704
+Test Accuracy : 0.652
+-----
+
+-----
+Tuning BoW Count Vectors with Chi-square feature selection Pipeline
+Fitting 3 folds for each of 18 candidates, totalling 54 fits
+Best score: 0.637
+Best parameters set:
+	feature_selection__k: 2000
+	svc__C: 0.01
+	vect__max_features: None
+Total time to refit: 24.007
+Test Accuracy : 0.601
+-----
+
+---------------
+
+
+BoW + LSA Models
+---------------
+
+-----
+Tuning LSA with TF-IDF Vectors Pipeline
+Fitting 3 folds for each of 4 candidates, totalling 12 fits
+Best score: 0.696
+Best parameters set:
+	svc__C: 0.1
+	svd__n_components: 500
+	vect__max_features: None
+Total time to refit: 33.177
+Test Accuracy : 0.659
+-----
+
+Tuning LSA with Count Vectors Pipeline
+Fitting 3 folds for each of 4 candidates, totalling 12 fits
+Best score: 0.642
+Best parameters set:
+	svc__C: 0.01
+	svd__n_components: 500
+	vect__max_features: None
+Total time to refit: 306.208
+Test Accuracy : 0.601
+-----
+
+---------------
+Accuracy	Training Time	Testing Time
