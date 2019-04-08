@@ -12,7 +12,7 @@ Best score: 0.745
 Best parameters set:
 	svc__C: 1
 	vect__max_features: None
-Total time to refit: 9.571
+Total time to refit: 8.449
 Test Accuracy : 0.688
 -----
 
@@ -23,7 +23,7 @@ Best score: 0.711
 Best parameters set:
 	svc__C: 0.01
 	vect__max_features: None
-Total time to refit: 10.770
+Total time to refit: 9.382
 Test Accuracy : 0.657
 -----
 
@@ -41,7 +41,7 @@ Best parameters set:
 	feature_selection__k: 2000
 	svc__C: 1
 	vect__max_features: None
-Total time to refit: 8.704
+Total time to refit: 9.328
 Test Accuracy : 0.652
 -----
 
@@ -53,7 +53,7 @@ Best parameters set:
 	feature_selection__k: 2000
 	svc__C: 0.01
 	vect__max_features: None
-Total time to refit: 24.007
+Total time to refit: 16.624
 Test Accuracy : 0.601
 -----
 
@@ -65,26 +65,32 @@ BoW + LSA Models
 
 -----
 Tuning LSA with TF-IDF Vectors Pipeline
-Fitting 3 folds for each of 4 candidates, totalling 12 fits
-Best score: 0.696
+Fitting 3 folds for each of 6 candidates, totalling 18 fits
+Best score: 0.730
 Best parameters set:
 	svc__C: 0.1
-	svd__n_components: 500
+	svd__n_components: 2000
 	vect__max_features: None
-Total time to refit: 33.177
-Test Accuracy : 0.659
+Total time to refit: 163.271
+Test Accuracy : 0.684
 -----
 
 Tuning LSA with Count Vectors Pipeline
-Fitting 3 folds for each of 4 candidates, totalling 12 fits
-Best score: 0.642
+Fitting 3 folds for each of 6 candidates, totalling 18 fits
+Best score: 0.686
 Best parameters set:
 	svc__C: 0.01
-	svd__n_components: 500
+	svd__n_components: 2000
 	vect__max_features: None
-Total time to refit: 306.208
-Test Accuracy : 0.601
+Total time to refit: 967.089
+Test Accuracy : 0.638
 -----
 
 ---------------
 Accuracy	Training Time	Testing Time
+0.688	8.449	0.965
+0.657	9.382	0.704
+0.652	9.328	1.025
+0.601	16.624	0.912
+0.684	163.271	2.123
+0.638	967.089	2.007

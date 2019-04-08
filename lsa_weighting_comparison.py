@@ -35,7 +35,7 @@ FSELECT_PARAM_GRID = {'vect__max_features': [None],
                       'feature_selection__k': [100, 200, 500, 1000, 1500, 2000],
                       'svc__C': [0.01, 0.1, 1]}
 LSA_PARAM_GRID = {'vect__max_features': [None],
-                  'svd__n_components': [100, 500],
+                  'svd__n_components': [100, 500, 2000],
                   'svc__C': [0.01, 0.1]}
 
 
